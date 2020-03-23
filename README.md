@@ -7,15 +7,15 @@ The Backend of the Bot is enabled by [Dialogflow](https://dialogflow.com/ "Dialo
 
 ### Using the Bot
 
-- **Order a Pizza**
+- **Order a Pizza**  
 Simply say **order** anytime and the Bot will prompt you and get all the details. Once the order is placed, an Order ID.
-- **Order Status**
+- **Order Status**  
 Just say **status** and the Bot will ask you the Order ID. Upon entering Order ID, the Bot will revert back with the order status.
 
-### Accessing the Database
+### Accessing the Database  
 Database can be accessed [HERE](bit.ly/YoYo-DB "HERE") or by clicking the **Database** button (top-right corner) on the home page.
 sdsfsf
-## Architecture
+## Architecture  
 Below is a flow chart which can be helpful in understanding the working of the project.
 <br/>
 <br/>
