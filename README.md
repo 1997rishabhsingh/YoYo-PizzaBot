@@ -14,6 +14,7 @@ Simply say **order** anytime and the Bot will prompt you and get all the details
 Just say **status** and the Bot will ask you the Order ID. Upon entering Order ID, the Bot will revert back with the order status.
 
 ###Accessing the Database
+
 Database can be accessed [HERE](bit.ly/YoYo-DB "HERE") or by clicking the **Database** button (top-right corner) on the home page.
 
 ## Architecture
