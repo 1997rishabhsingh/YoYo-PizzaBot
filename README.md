@@ -17,7 +17,7 @@ Just say **status** and the Bot will ask you the Order ID. Upon entering Order I
 Database can be accessed [HERE](bit.ly/YoYo-DB "HERE") or by clicking the **Database** button (top-right corner) on the home page.
 
 ## Architecture
+Below is a flow chart which can be helpful in understanding the working of the project.
 <br/>
 <br/>
-Below is a flow chart which can be helpful in understanding the working of the project
 ![](architecture.png)
