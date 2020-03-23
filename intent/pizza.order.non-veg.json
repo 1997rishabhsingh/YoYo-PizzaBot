@@ -1,0 +1,253 @@
+{
+  "id": "daec8472-66fc-48b6-bd48-ca8d5bf8ee10",
+  "name": "pizza.order.non-veg",
+  "auto": true,
+  "contexts": [
+    "pizza_kind"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "pizza_type",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "12fde258-6dab-44df-8d7b-eef193085de9",
+          "required": true,
+          "dataType": "@pizza-kind",
+          "name": "pizzaKind",
+          "value": "$pizzaKind",
+          "prompts": [
+            "What kind of pizza would like?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "condition": "",
+          "textToSpeech": "Sure! We have these pizza. Which one would you like?",
+          "ssml": "",
+          "displayText": ""
+        },
+        {
+          "type": "carousel_card",
+          "platform": "google",
+          "condition": "",
+          "items": [
+            {
+              "optionInfo": {
+                "key": "Chicken Supreme Pizza",
+                "synonyms": []
+              },
+              "title": "Chicken Supreme Pizza",
+              "description": "Bite into supreme delight of Black Olives, Onions, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/Non-Veg_Supreme.jpg",
+                "accessibilityText": "Chicken Supreme Pizza"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Chicken Dominator Pizza",
+                "synonyms": []
+              },
+              "title": "Chicken Dominator Pizza",
+              "description": "Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/Dominator.jpg",
+                "accessibilityText": "Chicken Dominator Pizza"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Pepper Barbecue & Onion Pizza",
+                "synonyms": []
+              },
+              "title": "Pepper Barbecue Pizza",
+              "description": "Pepper Barbecue Chicken & Onion dipped in cheese with amazing secret spices.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/Pepper_Barbeque_&_Onion.jpg",
+                "accessibilityText": "Pepper Barbecue Pizza"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Indi Chicken Tikka Pizza",
+                "synonyms": []
+              },
+              "title": "Chicken Tikka Pizza",
+              "description": "The wholesome flavour of tandoori masala with Chicken Tikka, Onion, Red Paprika & mint mayo.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/IndianChickenTikka.jpg",
+                "accessibilityText": "Chicken Tikka Pizza"
+              }
+            }
+          ],
+          "lang": "en"
+        },
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "32cb2898-c960-447a-93d8-3abf1c654312",
+      "data": [
+        {
+          "text": "non",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b7e41697-fd6e-41ad-847a-3378f50a0977",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "non-vegetarian",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "644980e5-98df-4c19-989e-ab5c68d44950",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "non-veg",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4081c957-b337-4dce-baa9-7a84d505ac8e",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "non-vegetarian",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        },
+        {
+          "text": " pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "965bf1b7-ffd9-45f4-9c3e-78fdfb7fa9cc",
+      "data": [
+        {
+          "text": "non-vegetarian",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8e31c7f2-ff7f-4665-a854-272e1f370774",
+      "data": [
+        {
+          "text": "non-veg",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "34d87130-5b44-4eb6-8f08-87284dd9f7f6",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "non veg",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        },
+        {
+          "text": " pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

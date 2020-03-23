@@ -1,0 +1,231 @@
+{
+  "id": "dba1faf3-5f17-487d-8511-eb5aba9c5a8a",
+  "name": "pizza.order.veg",
+  "auto": true,
+  "contexts": [
+    "pizza_kind"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "pizza_type",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "1710b9bd-ab03-423c-b277-5d6928b508c7",
+          "required": true,
+          "dataType": "@pizza-kind",
+          "name": "pizzaKind",
+          "value": "$pizzaKind",
+          "prompts": [
+            "What kind of pizza do you want?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "condition": "",
+          "textToSpeech": "Sure! We have these pizza. Which one would you like?",
+          "ssml": "",
+          "displayText": ""
+        },
+        {
+          "type": "carousel_card",
+          "platform": "google",
+          "condition": "",
+          "items": [
+            {
+              "optionInfo": {
+                "key": "Margherita Pizza",
+                "synonyms": []
+              },
+              "title": "Margherita Pizza",
+              "description": "A hugely popular margherita, with a deliciously tangy single cheese topping.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/Margherit.jpg",
+                "accessibilityText": "Margherita Pizza"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Cheesy Pizza",
+                "synonyms": []
+              },
+              "title": "Cheesy Pizza",
+              "description": "The ever popular pizza with fully loaded cheese.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/Corn_&_Cheese.jpg",
+                "accessibilityText": "Cheesy Pizza"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Indi Tandoori Pizza",
+                "synonyms": []
+              },
+              "title": "Indi Tandoori Pizza",
+              "description": "It is hot. It is spicy. It is oh-so-Indian. Tandoori with capsicum, red paprika and mint mayo.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/IndianTandooriPaneer.jpg",
+                "accessibilityText": "Indi Tandoori Pizza"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Mexican Green Wave Pizza",
+                "synonyms": []
+              },
+              "title": "Mexican Green Wave Pizza",
+              "description": "A pizza loaded with crunchy onions, crisp capsicum, juicy tomatoes and jalapeno with a liberal sprinkling of exotic Mexican herbs.",
+              "image": {
+                "url": "https://www.dominos.co.in/files/items/Mexican_Green_Wave.jpg",
+                "accessibilityText": "Mexican Green Wave Pizza"
+              }
+            }
+          ],
+          "lang": "en"
+        },
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "95a11fe2-be3c-4090-9edb-b9ca7d7c4529",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "veg",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "18a98e8e-74b7-4230-b31c-83904a2c0d6b",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "vegetarian",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "37b4646d-b291-42e2-a3f1-c69346122f6a",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "vegetarian",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6eed2f70-4945-4134-abef-a776c430fcb6",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "veg",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6e332b5e-1ba4-40d4-a134-3ad2771b5add",
+      "data": [
+        {
+          "text": "vegetarian",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c88faaed-74d7-4680-b78c-1261deb3e7a6",
+      "data": [
+        {
+          "text": "veg",
+          "alias": "pizzaKind",
+          "meta": "@pizza-kind",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

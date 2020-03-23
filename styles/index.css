@@ -1,0 +1,29 @@
+body {
+  background-image: url("../images/bg-img.jpg");
+  height: 100%;
+  background-position: inherit;
+  background-size: cover;
+}
+
+.navbar {
+  color: white;
+  background-color: rgb(226, 30, 69);
+}
+
+.navbar-btn {
+  margin-left: auto;
+}
+
+.container {
+  margin-left: 250px;
+  margin-top: 30px;
+}
+
+.banner-pizza-img {
+  height: 600px;
+  margin-left: 50px;
+}
+
+.banner-text-img {
+  height: 300px;
+}

@@ -1,0 +1,356 @@
+{
+  "id": "42350401-df5c-496a-bf61-f9c3cb484b5b",
+  "name": "pizza.order.toppings",
+  "auto": true,
+  "contexts": [
+    "pizza_size"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "pizzaordertoppings-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "pizza_toppings",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f96a3cd3-90e2-47c6-971c-3c77ebd92f77",
+          "required": true,
+          "dataType": "@pizza-size",
+          "name": "pizzaSize",
+          "value": "$pizzaSize",
+          "prompts": [
+            "What would be its size?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "condition": "",
+          "textToSpeech": "Do you want any toppings on it?",
+          "ssml": "",
+          "displayText": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "condition": "",
+          "suggestions": [
+            {
+              "title": "Yes"
+            },
+            {
+              "title": "No"
+            }
+          ],
+          "lang": "en"
+        },
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "8079d919-cc64-490e-90c5-fa44e8b494e3",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "extra large",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6daa2e5b-3c9e-4f7c-9123-ce08de6296bf",
+      "data": [
+        {
+          "text": "need ",
+          "userDefined": false
+        },
+        {
+          "text": "extra large",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9b983717-ea38-471c-ab0a-5f73e9bf3c3c",
+      "data": [
+        {
+          "text": "want ",
+          "userDefined": false
+        },
+        {
+          "text": "little",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "70266852-c672-43a0-b122-698f1079c29f",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "large",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9994dd1a-c710-4914-ba1b-01337434137f",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "medium",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ffdd7d36-f7e7-4660-8eaa-5a9feb226c3a",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "medium",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b068b5b3-7cd3-4032-9b64-dd3df5960b95",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "medium",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9aa25ef2-c46d-4f8f-92c2-98914cb14add",
+      "data": [
+        {
+          "text": "medium",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "32432d87-d3bd-4b05-9402-c7d81de5b1f2",
+      "data": [
+        {
+          "text": "little",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "fc8278ab-ce94-4464-952d-cbc3b462edb2",
+      "data": [
+        {
+          "text": "small",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ae605424-2304-4549-9afd-ac67665e7e67",
+      "data": [
+        {
+          "text": "get ",
+          "userDefined": false
+        },
+        {
+          "text": "small",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        },
+        {
+          "text": " pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "776e45bd-969f-453b-97d7-34a89e161970",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "small",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        },
+        {
+          "text": " pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "df0c2a31-cd10-480e-aa90-38ad6e2a3604",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "small",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        },
+        {
+          "text": " pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3f4a75da-25d5-4700-a9c8-84537627b393",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "small",
+          "alias": "pizzaSize",
+          "meta": "@pizza-size",
+          "userDefined": false
+        },
+        {
+          "text": " pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

@@ -1,0 +1,287 @@
+{
+  "id": "8e177c7d-b279-41a3-b14f-aaab451ebeea",
+  "name": "pizza.order.statusById",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "pizzaorderstatus.pizzaorderstatus-no",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "acbba40f-3b94-4888-9cd4-90f06fdea8b9",
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "name": "orderId",
+          "value": "$orderId",
+          "prompts": [
+            "Please tell me your Order Id"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "bf2a43d5-d88c-4981-8ca5-c8762f4a97d4",
+      "data": [
+        {
+          "text": "status order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "35046f44-c79a-4a18-9df6-c44139b7ef29",
+      "data": [
+        {
+          "text": "status of order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c465841d-3a77-4fbc-8876-63eedd2eb97d",
+      "data": [
+        {
+          "text": "order status",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "dac14ee9-d703-4ca5-ae34-ac98ed302326",
+      "data": [
+        {
+          "text": "its different order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b723eb0b-d31a-4e26-bab6-2358a391a1ec",
+      "data": [
+        {
+          "text": "not this order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "66f1824b-299b-447c-a11b-8062428e3bcd",
+      "data": [
+        {
+          "text": "some other order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "36f9df60-5f84-427f-97ba-321995539ca8",
+      "data": [
+        {
+          "text": "other order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ca9d64ba-9a58-4f04-b755-bce6ccb01abd",
+      "data": [
+        {
+          "text": "different order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5460696c-7868-4409-9489-3408364f7380",
+      "data": [
+        {
+          "text": "status",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8007ad53-04d2-435b-9bc5-41be7dff9a7a",
+      "data": [
+        {
+          "text": "else",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f598c644-27e0-414a-a934-8b215259d477",
+      "data": [
+        {
+          "text": "no not really",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8186ee06-f679-4d64-9eb9-e4aab38bf9f8",
+      "data": [
+        {
+          "text": "nope",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bd28b039-a6d6-46df-b788-0efe61c1b18b",
+      "data": [
+        {
+          "text": "I don't think so",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "497348df-55d5-43ad-8053-af8c35678b62",
+      "data": [
+        {
+          "text": "I disagree",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1ccc1bba-04ef-4cea-a0ad-2d66230b83a1",
+      "data": [
+        {
+          "text": "not this time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1533dae0-ef05-49be-ba90-8f420c076d79",
+      "data": [
+        {
+          "text": "no don't",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4bacf07e-447d-4316-af4e-6895f79ddeca",
+      "data": [
+        {
+          "text": "definitely not",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 3,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "65b7eaa5-7d3f-4ef2-81fa-495b16b93567",
+      "data": [
+        {
+          "text": "not",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

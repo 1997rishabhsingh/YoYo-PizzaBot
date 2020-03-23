@@ -1,0 +1,1187 @@
+{
+  "id": "b85a657e-b868-4106-86e4-b9b401781de8",
+  "name": "pizza.order.size",
+  "auto": true,
+  "contexts": [
+    "pizza_type"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "pizza_size",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "d3bd3c4a-46b8-4aa1-a2e4-9912ba2a21c3",
+          "required": true,
+          "dataType": "@pizza-type",
+          "name": "pizzaType",
+          "value": "$pizzaType",
+          "prompts": [
+            "What would be the type of your pizza?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "condition": "",
+          "textToSpeech": "What would be the size of it?",
+          "ssml": "",
+          "displayText": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "condition": "",
+          "suggestions": [
+            {
+              "title": "Small"
+            },
+            {
+              "title": "Medium"
+            },
+            {
+              "title": "Large"
+            },
+            {
+              "title": "Extra Large"
+            }
+          ],
+          "lang": "en"
+        },
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "72ec52a3-dcf0-4f5b-a143-17e23a591985",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Non Veg Supreme",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2e5f9755-199f-4e89-b346-443a9814cc26",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Non Veg Supreme Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d6698574-3bb5-4d10-a709-8ccde266711a",
+      "data": [
+        {
+          "text": "Non Veg Supreme Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8c80d9cf-75f5-4e91-95f7-345aa0821db2",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Mexican",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "329274e7-c6b8-4096-a5b5-722b260c62e0",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Mexican Green Wave Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6805b8de-6005-4f0c-8704-f67b752d6727",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Mexican Green",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9f6be0b3-c43a-41d8-9df6-432b0be57a40",
+      "data": [
+        {
+          "text": "Mexican Green Wave",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "794904be-67f8-4534-841d-713de7038b42",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Mexican Green Wave Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bbc54dab-8092-4790-ac1e-7e7fb8eef367",
+      "data": [
+        {
+          "text": "Mexican",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "618df2d9-d39c-4ec1-b334-29c2b76902e0",
+      "data": [
+        {
+          "text": "Mexican Green",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8bb6ab17-790c-49ea-baf6-849aeba2e74c",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Mexican Green Wave",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "57630f08-11f6-4e57-9d87-a0fb1d082180",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Mexican Green Wave Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e1c5bddd-bf9c-48ff-ab4f-0208b99663d4",
+      "data": [
+        {
+          "text": "Mexican Green Wave Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "42707739-5b6b-4e92-9bb0-9a4242e5a7e9",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Tandoori",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "57d450a7-9216-4502-9543-6ad96baabb58",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Indi Tandoori",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "578e0efd-e5d9-4632-a16d-fdfedcc0666a",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Indi Tandoori Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8199b28d-9da6-489f-a027-905a25aaf673",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Indi",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "063d4a6f-0e6c-4c54-a6c9-d699fce7c34f",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Indi Tandoori",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "fd7dc011-ace1-4ffd-b9a8-cd105fa1be61",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Indi Tandoori Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1104e1bd-9811-4443-9351-5b0569d0ebff",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Tandoori",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "683aff29-2e1d-4e44-ad08-63d98bab7cb8",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Indi Tandoori",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8c2be26f-1f0b-4a6b-8383-c03c7c1eaf1a",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Indi Tandoori Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5f051aa6-59bc-4a0d-a38e-077f816bcaee",
+      "data": [
+        {
+          "text": "Indi Tandoori Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a13d41ff-7ded-42d5-b8d0-6ca0519d2360",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Cheesy",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "65fbc688-7701-4dff-a8db-7e3fefcb0653",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Cheesy Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d091799f-c472-4568-afb7-af8d2a2c9b03",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Cheesy",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d651f772-2086-4c5a-980c-1f93d7188d3b",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Cheesy Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1e105dff-f59a-41ff-8953-8d46ab872146",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "cheese",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3dfe6eaa-ede3-426a-84d7-71f69a80ceab",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "cheese",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "aaf6b136-2215-4c93-a53b-0d014ed3cc99",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Cheesy",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "532a9df4-65af-4cdc-b922-c9aa445552bb",
+      "data": [
+        {
+          "text": "want ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Tikka",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "00c3608e-ec0b-4b19-b4c8-73bc9ada1e8a",
+      "data": [
+        {
+          "text": "want ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Tikka Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6ed5f0e6-6d74-4263-acf7-b563fa03dd7d",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Tikka Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a2f59fd9-4204-42d7-ae6e-5ebeaa216917",
+      "data": [
+        {
+          "text": "Chicken Tikka",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "90fe2f8e-5219-4572-ae18-6e7262ee93ff",
+      "data": [
+        {
+          "text": "Chicken Tikka Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "62e88258-40e7-4a9f-8227-2a60641913dc",
+      "data": [
+        {
+          "text": "need ",
+          "userDefined": false
+        },
+        {
+          "text": "Pepper Barbecue Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "105a618e-32cc-48a3-9614-698d38068513",
+      "data": [
+        {
+          "text": "Pepper Barbecue",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "66122058-40f5-463e-ab7f-fca4e539beea",
+      "data": [
+        {
+          "text": "Pepper Barbecue Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "7c21c44c-2607-4b26-bc63-4bd3b73b5854",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Pepper Barbecue Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "7355399b-8ae2-4158-ba00-52a09e4e67f9",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Dominator",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3be076e9-1f7b-44b9-9460-2fe0ecc37b3c",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Dominator",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        },
+        {
+          "text": " Pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b4746f5e-63d2-4be8-a75f-27d6a3ad5dbf",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Dominator Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8891d434-8b64-45f0-bec3-72eaa3a7ded9",
+      "data": [
+        {
+          "text": "Chicken Dominator Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bfd052d9-8409-4852-b73e-65ca5f5181f5",
+      "data": [
+        {
+          "text": "get ",
+          "userDefined": false
+        },
+        {
+          "text": "supreme",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "59953e99-c3ba-481e-a11f-3ba4d279ed99",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "supreme",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4c5c4476-5f38-4566-9c28-535e4f82054d",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Supreme",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "29da5822-3929-44f1-aa60-172d64fb9a37",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Supreme",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5f989eab-b96f-47b1-9e79-e2d9bd1cab35",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Supreme Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ac2ac18b-1603-409d-ba50-ee2b47365b7b",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Supreme Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2e6af798-aae6-4a9a-9cff-ae507b930f1d",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Chicken Supreme Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "cb5365bd-26eb-4d5d-a011-9d97e24ea6d3",
+      "data": [
+        {
+          "text": "Chicken Supreme",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8b001453-5bd5-48e6-8baa-a82561b62c55",
+      "data": [
+        {
+          "text": "Chicken Supreme Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "7ed88036-4fc6-48bc-81b5-482d08d5139e",
+      "data": [
+        {
+          "text": "Cheesy Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "107764b4-a9c5-4c67-97f4-3e7d2efd9be0",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Margherita",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0ed3006e-8cc0-4cd0-a0f5-4c854ef61ed9",
+      "data": [
+        {
+          "text": "give ",
+          "userDefined": false
+        },
+        {
+          "text": "Margherita Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a60d2c20-61d1-47fb-9aae-2f69d286d789",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Margherita",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "484e346c-cd62-4caa-89b4-145c58b1c589",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Margherita Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "42af3270-6201-4002-b04d-4889a280fa3d",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Margherita",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8546d11c-c20b-4f95-ab02-675dffaeda3b",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Margherita Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "891a6783-8fc4-4f7a-997e-fff06a2aa8ca",
+      "data": [
+        {
+          "text": "Margherita",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9ff1045a-a3ad-4a8b-9cba-f80b6b964672",
+      "data": [
+        {
+          "text": "Margherita Pizza",
+          "alias": "pizzaType",
+          "meta": "@pizza-type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

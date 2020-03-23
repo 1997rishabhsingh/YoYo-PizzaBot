@@ -1,0 +1,500 @@
+{
+  "id": "883f5f56-82f8-407f-bef7-1dc399649569",
+  "name": "pizza.order.details",
+  "auto": true,
+  "contexts": [
+    "pizza_toppings"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0d75848d-d51e-48c6-aa73-7ea3cdcaebf8",
+          "required": false,
+          "dataType": "@pizza-toppings",
+          "name": "pizzaToppings",
+          "value": "$pizzaToppings",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "f8149ff2-cc3c-46c7-a332-4e1d93d1d47f",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "pizzaQuantity",
+          "value": "$pizzaQuantity",
+          "prompts": [
+            "How many pizza?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "f8dc9424-b75b-467b-a987-e8f9b7410880",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "userName",
+          "value": "$userName",
+          "prompts": [
+            "Please tell me your name."
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "1d3346ec-b265-4449-a9f6-2f0af0902aa3",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "mobileNo",
+          "value": "$mobileNo",
+          "prompts": [
+            "What's your Phone No. $userName ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "d58697f2-a7f0-49fc-9626-d921e0f7796d",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "userAddress",
+          "value": "$userAddress",
+          "prompts": [
+            "And your address $userName ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "10a113be-38fd-4d91-84af-d5d6681c7dc4",
+      "data": [
+        {
+          "text": "use ",
+          "userDefined": false
+        },
+        {
+          "text": "capcicum",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "90708db3-585a-4429-a400-ac3f20e22231",
+      "data": [
+        {
+          "text": "put ",
+          "userDefined": false
+        },
+        {
+          "text": "capcicum",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "fe48ba47-c109-4684-8405-b0b44aa8a72f",
+      "data": [
+        {
+          "text": "capcicum",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ac54e2ee-7885-440a-bf08-c84495f62f77",
+      "data": [
+        {
+          "text": "fresh tomato",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "85f032bc-dcae-4574-a991-ff6e9afb6daf",
+      "data": [
+        {
+          "text": "put ",
+          "userDefined": false
+        },
+        {
+          "text": "tomato",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bf0a3f99-5949-4281-bb2c-0f93d83f95d4",
+      "data": [
+        {
+          "text": "tomato",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9085598f-3d2d-48e3-ba8e-b98b02f1585d",
+      "data": [
+        {
+          "text": "put ",
+          "userDefined": false
+        },
+        {
+          "text": "Olives",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "298ea533-e8b2-4b6e-ae89-cad4e7d14436",
+      "data": [
+        {
+          "text": "need ",
+          "userDefined": false
+        },
+        {
+          "text": "Olives",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "14154b1e-b473-4c6c-94fc-e5be2251458f",
+      "data": [
+        {
+          "text": "want ",
+          "userDefined": false
+        },
+        {
+          "text": "Olives",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1e4b33ce-020d-4830-a93c-a6404351e128",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Olives",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4b5b1962-4eef-4f85-80cd-d3aa65cffb26",
+      "data": [
+        {
+          "text": "Olives",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "588724d4-94ae-4f75-8efe-0ec964a7d402",
+      "data": [
+        {
+          "text": "put ",
+          "userDefined": false
+        },
+        {
+          "text": "Paneer",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e8acfb04-c84d-4fc2-b4ad-0f52ff8b4441",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "Paneer",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "53ef8534-cca6-4b5a-b5d3-ccf5091e1471",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "Paneer",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1fc2d679-94e9-48b7-8dd7-d46afed530e3",
+      "data": [
+        {
+          "text": "Paneer",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c3b4045f-07e7-4150-a89a-83429a3547ed",
+      "data": [
+        {
+          "text": "put ",
+          "userDefined": false
+        },
+        {
+          "text": "onion",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "656007f9-2888-4882-acca-9ffc2480c3bd",
+      "data": [
+        {
+          "text": "i need ",
+          "userDefined": false
+        },
+        {
+          "text": "onion",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "94eb473a-9cde-41dd-800c-64a312d078f1",
+      "data": [
+        {
+          "text": "i want ",
+          "userDefined": false
+        },
+        {
+          "text": "onion",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0ee16914-f03f-4927-ab35-9e9563ab55d3",
+      "data": [
+        {
+          "text": "Onion",
+          "alias": "pizzaToppings",
+          "meta": "@pizza-toppings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8ee7b30a-c043-4a35-b7f7-c4c15992eb98",
+      "data": [
+        {
+          "text": "none",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ce275400-72e6-4b40-afee-2a6a60f331d5",
+      "data": [
+        {
+          "text": "not",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6c95f1d6-fe2e-4b04-8c4c-019a9a635234",
+      "data": [
+        {
+          "text": "nope",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "705c8be1-dc1e-47f1-9f0e-2b0c9b78b801",
+      "data": [
+        {
+          "text": "no",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

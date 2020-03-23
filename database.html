@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/database.css" />
+    <title>YoYo Pizza Database</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h1 class="navbar-brand" href="#">
+        <img
+          src="icons/brand-logo.jpg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        YoYo Pizza
+      </h1>
+    </nav>
+    <div class="container" style="text-align: center;">
+      <h1 class="table-heading">Saved Orders</h1>
+      <h5 class="table-heading">
+        Table will update automatically upon any new order
+      </h5>
+
+      <table id="order-table" class="table table-bordered">
+        <thead class="thead-dark table-fixed">
+          <tr>
+            <th scope="col">Order ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Mobile No.</th>
+            <th scope="col">Pizza Type</th>
+            <th scope="col">Size</th>
+            <th scope="col">Topping</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Order Date</th>
+            <th scope="col">Order Time</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+    <script src="js/database.js"></script>
+  </body>
+</html>

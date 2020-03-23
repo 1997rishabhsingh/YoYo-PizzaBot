@@ -1,0 +1,181 @@
+{
+  "id": "30c34908-1025-47f5-873e-1c70d97ef6f9",
+  "name": "pizza.order",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "pizza_kind",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "condition": "",
+          "textToSpeech": "Alright! What kind of pizza?",
+          "ssml": "",
+          "displayText": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "condition": "",
+          "suggestions": [
+            {
+              "title": "Veg"
+            },
+            {
+              "title": "Non-Veg"
+            }
+          ],
+          "lang": "en"
+        },
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "da6ec958-02be-4257-b64b-3d4e1fc55e28",
+      "data": [
+        {
+          "text": "I need a pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2ad6b29a-98e9-428b-8fec-7d2e1d367117",
+      "data": [
+        {
+          "text": "I want to order pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3ec5f762-28d5-4de8-8f6a-ca933d49cede",
+      "data": [
+        {
+          "text": "get pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "81769547-d348-4ed8-81b8-8a588bc3a590",
+      "data": [
+        {
+          "text": "cook pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6236a308-1e6b-46a7-a08f-291e456c1980",
+      "data": [
+        {
+          "text": "order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1ab4bf73-2dad-44b4-9153-e76a76e8f831",
+      "data": [
+        {
+          "text": "give pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "66a7e14a-f6ed-4821-85d3-b4544ad87d99",
+      "data": [
+        {
+          "text": "i need pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "01c4328a-aab8-4f5f-bc92-e008feeecdf3",
+      "data": [
+        {
+          "text": "i want pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "064a233d-be12-412f-b4ae-791c12c8ce2b",
+      "data": [
+        {
+          "text": "order pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}
