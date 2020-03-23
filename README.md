@@ -1,7 +1,7 @@
 # About
 This is a simple Bot capable of placing order and getting status of existing order.
 The Backend of the Bot is enabled by [Dialogflow](https://dialogflow.com/ "Dialogflow") and the Frontend is enabled by [BotCopy](http://botcopy.com/ "BotCopy"). All the orders placed using the bot are persisted in [Firebase Database](https://firebase.google.com/ "Firebase Database").
- You can try it out HERE.
+ You can try it out [HERE](https://bit.ly/YoYo-Pizza).
  
  ## Instructions
 
